@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL_CUSTOMBOARD_PATH/package/package1/Config.in"
+source "$BR2_EXTERNAL_CUSTOMBOARD_PATH/package/package2/Config.in"
