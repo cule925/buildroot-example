@@ -1,0 +1,7 @@
+config BR2_PACKAGE_EXT_PYTHON_LXML
+	bool "python-lxml"
+	select BR2_PACKAGE_LIBXML2
+	select BR2_PACKAGE_LIBXSLT
+	select BR2_PACKAGE_PYTHON3_ZLIB
+	help
+		Python library for XML processing combining libxml2 and libxslt. Version 6.0.2.
