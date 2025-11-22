@@ -1,6 +1,16 @@
 #!/bin/bash
 
-AVAILABLE_COMMANDS="build|menuconfig|linux-menuconfig|clean|clean-all|clean-dist|defconfig-save|defconfig-list|defconfig-load"
+AVAILABLE_COMMANDS="Unknown command. Usage:
+
+$0 <subcommand>
+
+SUBCOMMAND:
+
+	build
+	menuconfig|linux-menuconfig
+	clean|clean-all|clean-dist
+	defconfig-save|defconfig-list|defconfig-load
+"
 
 MAKE_TARGET=""
 TARGET_ARG=""
@@ -48,7 +58,7 @@ case $1 in
                 MAKE_TARGET="$DEFCONFIG_NAME"
 		;;
 	*)
-		echo "Unknown command. Usage: $0 {$AVAILABLE_COMMANDS}"
+		echo "$AVAILABLE_COMMANDS"
 		exit 1
 		;;
 esac
