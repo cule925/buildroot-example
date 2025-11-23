@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LVGL_APP
+	select BR2_PACKAGE_LVGL
+	bool "lvgl-app"
+	help
+		Simple LVGL application which uses LVGL and Linux framebuffer.
