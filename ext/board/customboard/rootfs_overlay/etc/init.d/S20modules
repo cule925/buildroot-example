@@ -1,0 +1,21 @@
+#!/bin/sh
+
+case "$1" in
+        start)
+        echo "Inserting modules ..."
+        modprobe rfkill
+        modprobe brcmfmac
+        modprobe hci_uart
+        exit 0
+	;;
+
+	stop)
+        echo "Removing modules not implemented"
+        exit 0
+	;;
+
+	*)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+	;;
+esac
