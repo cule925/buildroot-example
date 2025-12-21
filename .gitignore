@@ -1,2 +1,1 @@
-wpa_supplicant*
-*/wpa_supplicant*
+**/NetworkManager/system-connections/
