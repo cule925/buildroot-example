@@ -1,1 +1,1 @@
-root=/dev/mmcblk0p2 rootwait console=tty1 console=ttyAMA0,115200
+root=PARTUUID=0cd94c5b-a9c9-4634-93bc-d41e2c937903 rootwait console=tty1 console=ttyAMA0,115200
