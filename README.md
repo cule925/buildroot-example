@@ -75,3 +75,10 @@ To disable Wi-Fi and remove the credentials for Wi-Fi autoconnect before build, 
 ./remove_wifi_autoconnect.sh
 ```
 
+# QEMU
+
+To emulate a target board on Arch Linux, install QEMU with the following command:
+
+```
+sudo pacman -S qemu-full
+```

@@ -38,9 +38,15 @@ int main(void)
     _gp_disp = lv_linux_fbdev_create();
     lv_linux_fbdev_set_file(_gp_disp, FBDEV);
 
+    /* Set screen background color */
+    lv_obj_set_style_bg_color(lv_scr_act(), lv_color_hex(0xD6EDFF), 0);
+    lv_obj_set_style_bg_opa(lv_scr_act(), LV_OPA_COVER, 0);
+
     /* Create a label with empty text */
     _gp_label = lv_label_create(lv_scr_act());
     lv_label_set_text(_gp_label, "");
+    lv_obj_set_style_text_color(_gp_label, lv_color_hex(0x6B4226), 0);
+    lv_obj_set_style_text_font(_gp_label, &lv_font_montserrat_48, 0);
     lv_obj_align(_gp_label, LV_ALIGN_CENTER, 0, 0);
 
     /* Create a timer which will periodically switch the texts in the label */
