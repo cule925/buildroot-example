@@ -23,14 +23,6 @@ static lv_timer_t * _gp_timer = NULL;
 
 int main(void)
 {
-    uid_t uid = getuid();
-
-    if (0 != uid)
-    {
-        printf("You must be root to run this!\n");
-        exit(1);
-    }
-
     /* LVGL init */
     lv_init();
 

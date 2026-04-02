@@ -3,12 +3,12 @@
 case "$1" in
 	start)
 	echo "Starting LVGL app ..."
-    start-stop-daemon -S -b -x /home/user/lvgl_app
+    start-stop-daemon -c user -S -b -x /home/user/lvgl_app
 	;;
 
 	stop)
 	echo "Stopping LVGL app ..."
-    start-stop-daemon -K -x /home/user/lvgl_app
+    start-stop-daemon -u user -K -x /home/user/lvgl_app
 	;;
 
 	*)
