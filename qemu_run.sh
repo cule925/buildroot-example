@@ -2,7 +2,7 @@
 
 TARGET_DEVICE_TREE_BLOB="buildroot/output/images/bcm2711-rpi-4-b.dtb"
 TARGET_KERNEL="buildroot/output/images/Image"
-TARGET_KERNEL_CMDLINE_PARAMS="root=/dev/mmcblk1p2 rootwait quiet"
+TARGET_KERNEL_CMDLINE_PARAMS="root=/dev/mmcblk1p2 rootwait quiet vt.global_cursor_default=0"
 TARGET_IMG="buildroot/output/images/sdcard.img"
 
 # Resize image (increase size) to accommodate QEMU image size requirement
